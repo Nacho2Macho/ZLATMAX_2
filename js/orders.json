@@ -1,0 +1,22 @@
+[
+    {
+        "data": {
+            "id": 1,
+            "title": "Набор ножей из нержавеющей стали",
+            "weight": 730,
+            "price": 300,
+            "imgSrc": "knife_1.png"
+        },
+        "orderCount": 10
+    },
+    {
+        "data": {
+            "id": 2,
+            "title": "Набор ножей кухонных с подставкой",
+            "weight": 2100,
+            "price": 250,
+            "imgSrc": "knife_1.png"
+        },
+        "orderCount": 2
+    }
+]
