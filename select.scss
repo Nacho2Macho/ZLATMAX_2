@@ -1,0 +1,118 @@
+@use "sass:math";
+%ic {
+  font-family: "icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+._icon-arrow-down:before {
+  content: "\e908";
+}
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}
+@function eme($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) + em;
+  @return $result;
+}
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+.itc-select {
+  position: relative;
+  // width: 100%;
+  height: rem(40);
+  &__toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    padding: rem(10) rem(20);
+    font-size: rem(20);
+    line-height: math.div(20, 16);
+    border: 1px solid rgba(4, 4, 4, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.5);
+    &::after {
+      flex-shrink: 0;
+      // width: 0.75rem;
+      // height: 0.75rem;
+      margin-left: eme(10, 8);
+      background-size: cover;
+      content: "\e908";
+      @extend %ic;
+      transition: all 0.3s ease 0s;
+      font-size: rem(8);
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &:focus {
+      background-color: #fff;
+    }
+  }
+  &_show {
+    .itc-select__toggle::after {
+      transform: rotate(180deg);
+    }
+    .itc-select__dropdown {
+      display: block;
+    }
+    .itc-select__backdrop {
+      display: block;
+    }
+  }
+  &__dropdown {
+    position: absolute;
+    top: 3.5rem;
+    right: 0;
+    z-index: 2;
+    display: none;
+    max-height: 10rem;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem;
+  }
+  &__options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__option {
+    padding: 0.375rem 0.75rem;
+    color: rgba(0, 0, 0, 0.5);
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, 1);
+        cursor: pointer;
+        transition: 0.2s background-color ease-in-out;
+      }
+    }
+    &_selected {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #e1f5fe;
+      &::after {
+        width: 0.75rem;
+        height: 0.75rem;
+        color: #0277bd;
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-inline--fa fa-check fa-w-16" data-icon="check" data-prefix="fas" aria-hidden="true"%3E%3Cpath d="M33.964 85.547l-32.5-32.251a4.935 4.935 0 010-7.017l7.071-7.017a5.027 5.027 0 017.071 0L37.5 60.987l46.894-46.534a5.028 5.028 0 017.07 0l7.072 7.017a4.935 4.935 0 010 7.017l-57.5 57.06a5.027 5.027 0 01-7.072 0z" fill="%230277bd"/%3E%3C/svg%3E');
+        background-size: cover;
+        content: "";
+      }
+    }
+  }
+}

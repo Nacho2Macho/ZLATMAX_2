@@ -1,0 +1,2922 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="slider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top top-header">
+        <div class="top-header__container">
+          <nav class="top-header__menu menu-top-header">
+            <ul data-da="menu__body,991.98" class="menu-top-header__list">
+              <li class="menu-top-header__item menu-top-header__item_catalog">
+                <a
+                  href=""
+                  class="menu-top-header__link menu-top-header__link_catalog _icon-arrow-down"
+                  >Каталог товаров</a
+                >
+              </li>
+              <li class="menu-top-header__item">
+                <a href="" class="menu-top-header__link">О нас</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="" class="menu-top-header__link">Оплата и доставка</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="index2.html" class="menu-top-header__link">Каталог</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="" class="menu-top-header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="#popup" class="top-header__user _icon-cabinet popup-link"
+            ><span>Войти</span></a
+          >
+          <div class="wrapper">
+            <div id="popup" class="popup">
+              <div class="popup__body">
+                <div class="popup__content">
+                  <img
+                    src="img/header_2/cancel.svg"
+                    class="popup__close close-popup"
+                  />
+                  <form action="#" class="content-sign__form form-content-sign">
+                    <h2 class="top-content-sign__sub-title">
+                      Войдите в аккаунт
+                    </h2>
+                    <div class="form-content-sign__rows rows-form-content-sign">
+                      <div class="rows-form-content-sign__row">
+                        <label id="Email" class="rows-form-content-sign__label">
+                          <input
+                            class="rows-form-content-sign__input"
+                            type="email"
+                          />
+                          <span>Email</span>
+                        </label>
+                        <div class="form__error">Неверный Email</div>
+                      </div>
+                      <div class="rows-form-content-sign__row">
+                        <label
+                          id="Password"
+                          class="rows-form-content-sign__label"
+                        >
+                          <input
+                            class="rows-form-content-sign__input"
+                            id="password__input-create"
+                            type="password"
+                          />
+                          <span>Password</span>
+                          <a
+                            href="#"
+                            class="rows-form-content-sign-label__password password-control"
+                            onclick="return showHidePasswor(this,'password__input-create');"
+                          ></a>
+                        </label>
+                        <div class="form__erro">Неверный Пароль</div>
+                      </div>
+
+                      <a
+                        id="button"
+                        type="submit"
+                        class="form-content-sign__button button"
+                      >
+                        <span>Войти</span>
+                      </a>
+                      <div class="content-sign__bottom bottom-content-sign">
+                        <h6 class="bottom-content-sign__title">
+                          <a href=""><span>ИЛИ</span></a>
+                        </h6>
+                        <div class="bottom-content-sign__icons">
+                          <div class="bottom-content-sign__row">
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="#1877F2"
+                                  ></path>
+                                  <path
+                                    d="M35.5 24C35.5 17.9249 30.5751 13 24.5 13C18.4249 13 13.5 17.9249 13.5 24C13.5 29.4904 17.5225 34.0412 22.7812 34.8663V27.1797H19.9883V24H22.7812V21.5766C22.7812 18.8197 24.4235 17.2969 26.9361 17.2969C28.1396 17.2969 29.3984 17.5117 29.3984 17.5117V20.2188H28.0113C26.6449 20.2188 26.2188 21.0667 26.2188 21.9366V24H29.2695L28.7818 27.1797H26.2188V34.8663C31.4775 34.0412 35.5 29.4904 35.5 24Z"
+                                    fill="white"
+                                  ></path>
+                                </svg>
+                              </a>
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="#1D9BF0"
+                                  ></path>
+                                  <g clip-path="url(#clip0_150_9710)">
+                                    <path
+                                      d="M33.1893 18.7772C33.2026 18.9793 33.2026 19.1814 33.2026 19.3854C33.2026 25.6004 28.6961 32.7683 20.4559 32.7683V32.7646C18.0217 32.7683 15.6381 32.0362 13.5889 30.6559C13.9428 30.7006 14.2985 30.723 14.6552 30.7239C16.6724 30.7258 18.632 30.0151 20.219 28.7066C18.302 28.6684 16.621 27.3561 16.0337 25.4402C16.7052 25.5762 17.3972 25.5483 18.0563 25.3592C15.9663 24.9159 14.4627 22.9879 14.4627 20.7489V20.6893C15.0854 21.0535 15.7827 21.2556 16.4959 21.2779C14.5274 19.8967 13.9206 17.1473 15.1094 14.9977C17.3839 17.9362 20.7398 19.7225 24.3423 19.9116C23.9812 18.278 24.4744 16.5661 25.6383 15.4177C27.4427 13.637 30.2805 13.7282 31.9766 15.6217C32.9799 15.414 33.9415 15.0275 34.8215 14.4798C34.4871 15.5686 33.7872 16.4935 32.8522 17.0812C33.7402 16.9713 34.6077 16.7217 35.4248 16.3407C34.8233 17.287 34.0657 18.1113 33.1893 18.7772Z"
+                                      fill="white"
+                                    ></path>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_150_9710">
+                                      <rect
+                                        width="22"
+                                        height="19"
+                                        fill="white"
+                                        transform="translate(13.5 14)"
+                                      ></rect>
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </a>
+
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="#EA4335"
+                                  ></path>
+                                  <path
+                                    d="M35.06 24.25C35.06 23.47 34.99 22.72 34.86 22H24.5V26.26H30.42C30.16 27.63 29.38 28.79 28.21 29.57V32.34H31.78C33.86 30.42 35.06 27.6 35.06 24.25Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M24.4997 34.9996C27.4697 34.9996 29.9597 34.0196 31.7797 32.3396L28.2097 29.5696C27.2297 30.2296 25.9797 30.6296 24.4997 30.6296C21.6397 30.6296 19.2097 28.6996 18.3397 26.0996H14.6797V28.9396C16.4897 32.5296 20.1997 34.9996 24.4997 34.9996Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M18.34 26.0903C18.12 25.4303 17.99 24.7303 17.99 24.0003C17.99 23.2703 18.12 22.5703 18.34 21.9103V19.0703H14.68C13.93 20.5503 13.5 22.2203 13.5 24.0003C13.5 25.7803 13.93 27.4503 14.68 28.9303L17.53 26.7103L18.34 26.0903Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M24.4997 17.38C26.1197 17.38 27.5597 17.94 28.7097 19.02L31.8597 15.87C29.9497 14.09 27.4697 13 24.4997 13C20.1997 13 16.4897 15.47 14.6797 19.07L18.3397 21.91C19.2097 19.31 21.6397 17.38 24.4997 17.38Z"
+                                    fill="white"
+                                  ></path></svg
+                              ></a>
+
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M1.17606 24C1.17606 36.8815 11.6185 47.3239 24.5 47.3239C37.3815 47.3239 47.8239 36.8815 47.8239 24C47.8239 11.1185 37.3815 0.676056 24.5 0.676056C11.6185 0.676056 1.17606 11.1185 1.17606 24ZM24.5 0C11.2452 0 0.5 10.7452 0.5 24C0.5 37.2548 11.2452 48 24.5 48C37.7548 48 48.5 37.2548 48.5 24C48.5 10.7452 37.7548 0 24.5 0Z"
+                                    fill="#DDDDE1"
+                                  ></path>
+                                  <path
+                                    d="M34.4758 14L25.8301 20.4213L27.4289 16.6328L34.4758 14Z"
+                                    fill="black"
+                                    stroke="#E2761B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M14.5169 14L23.093 20.4821L21.5724 16.6328L14.5169 14ZM31.3651 28.8845L29.0625 32.4123L33.9892 33.7678L35.4056 28.9627L31.3651 28.8845ZM13.6045 28.9627L15.0121 33.7678L19.9389 32.4123L17.6363 28.8845L13.6045 28.9627Z"
+                                    fill="#E4761B"
+                                    stroke="#E4761B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M19.661 22.9232L18.2881 24.9999L23.1801 25.2172L23.0063 19.9602L19.661 22.9232ZM29.332 22.9232L25.9432 19.8994L25.8303 25.2172L30.7136 24.9999L29.332 22.9232ZM19.939 32.4118L22.876 30.9781L20.3387 28.997L19.939 32.4118ZM26.117 30.9781L29.0626 32.4118L28.6542 28.997L26.117 30.9781Z"
+                                    fill="#E4761B"
+                                    stroke="#E4761B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M29.0621 32.4117L26.1165 30.978L26.3511 32.8983L26.325 33.7064L29.0621 32.4117ZM19.9385 32.4117L22.6756 33.7064L22.6582 32.8983L22.8754 30.978L19.9385 32.4117Z"
+                                    fill="#D7C1B3"
+                                    stroke="#D7C1B3"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M22.7199 27.7287L20.2695 27.0075L21.9987 26.2168L22.7199 27.7287ZM26.2737 27.7287L26.9949 26.2168L28.7328 27.0075L26.2737 27.7287Z"
+                                    fill="#233447"
+                                    stroke="#233447"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M19.9384 32.4123L20.3554 28.8845L17.6357 28.9627L19.9384 32.4123ZM28.6449 28.8845L29.062 32.4123L31.3646 28.9627L28.6449 28.8845ZM30.7129 25.0005L25.8296 25.2177L26.2814 27.7289L27.0026 26.217L28.7405 27.0077L30.7129 25.0005ZM20.2686 27.0077L22.0064 26.217L22.7189 27.7289L23.1794 25.2177L18.2874 25.0005L20.2686 27.0077Z"
+                                    fill="#CD6116"
+                                    stroke="#CD6116"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M18.2881 25.0005L20.3387 28.9975L20.2692 27.0077L18.2881 25.0005ZM28.7411 27.0077L28.6542 28.9975L30.7136 25.0005L28.7411 27.0077ZM23.1801 25.2177L22.7196 27.7289L23.293 30.6919L23.4234 26.7905L23.1801 25.2177ZM25.8303 25.2177L25.5957 26.7818L25.6999 30.6919L26.2821 27.7289L25.8303 25.2177Z"
+                                    fill="#E4751F"
+                                    stroke="#E4751F"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M26.2824 27.7285L25.7003 30.6915L26.1173 30.9783L28.6546 28.9971L28.7415 27.0073L26.2824 27.7285ZM20.2695 27.0073L20.339 28.9971L22.8763 30.9783L23.2934 30.6915L22.7199 27.7285L20.2695 27.0073Z"
+                                    fill="#F6851B"
+                                    stroke="#F6851B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M26.325 33.7073L26.3511 32.8992L26.1338 32.708H22.858L22.6582 32.8992L22.6756 33.7073L19.9385 32.4126L20.8943 33.1946L22.832 34.5414H26.1599L28.1063 33.1946L29.0621 32.4126L26.325 33.7073Z"
+                                    fill="#C0AD9E"
+                                    stroke="#C0AD9E"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M26.1165 30.9781L25.6994 30.6914H23.2925L22.8754 30.9781L22.6582 32.8984L22.8581 32.7073H26.1339L26.3511 32.8984L26.1165 30.9781Z"
+                                    fill="#161616"
+                                    stroke="#161616"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M34.8406 20.8384L35.5792 17.2932L34.4757 14L26.1167 20.2041L29.3317 22.9238L33.8761 24.2532L34.8841 23.0802L34.4496 22.7673L35.1447 22.133L34.606 21.716L35.3012 21.1859L34.8406 20.8384ZM13.4219 17.2932L14.1605 20.8384L13.6912 21.1859L14.3864 21.716L13.8563 22.133L14.5515 22.7673L14.117 23.0802L15.1163 24.2532L19.6607 22.9238L22.8757 20.2041L14.5167 14L13.4219 17.2932Z"
+                                    fill="#763D16"
+                                    stroke="#763D16"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M33.8763 24.2532L29.3319 22.9238L30.7134 25.0005L28.6541 28.9975L31.3651 28.9627H35.4056L33.8763 24.2532ZM19.6608 22.9238L15.1164 24.2532L13.6045 28.9627H17.6363L20.3386 28.9975L18.2879 25.0005L19.6608 22.9238ZM25.8301 25.2177L26.1169 20.2041L27.4376 16.6328H21.5724L22.8758 20.2041L23.1799 25.2177L23.2842 26.7991L23.2929 30.6919H25.6998L25.7172 26.7991L25.8301 25.2177Z"
+                                    fill="#F6851B"
+                                    stroke="#F6851B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path></svg
+                              ></a>
+
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="content-sign__text">
+                      Первый раз?
+                      <a href="#popup_2" class="content-sign_link popup-link"
+                        ><span>Зарегистрируйтесь сейчас!</span></a
+                      >
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id="popup_2" class="popup">
+              <div class="popup__body">
+                <div class="popup__content">
+                  <img
+                    src="img/header_2/cancel.svg"
+                    class="popup__close close-popup"
+                  />
+                  <form action="#" class="content-sign__form form-content-sign">
+                    <h2 class="top-content-sign__sub-title">
+                      Создайте аккаунт
+                    </h2>
+                    <div class="form-content-sign__rows rows-form-content-sign">
+                      <div class="rows-form-content-sign__row">
+                        <label id="Name" class="rows-form-content-sign__label">
+                          <input
+                            class="rows-form-content-sign__input"
+                            type="text"
+                          />
+                          <span>First Name</span>
+                        </label>
+                      </div>
+                      <div class="rows-form-content-sign__row">
+                        <label id="email" class="rows-form-content-sign__label">
+                          <input
+                            class="rows-form-content-sign__input"
+                            type="mail"
+                          />
+                          <span>Email</span>
+                        </label>
+                        <div class="form__err">Неверный Email</div>
+                      </div>
+                      <div class="rows-form-content-sign__row">
+                        <label
+                          id="password"
+                          class="rows-form-content-sign__label"
+                        >
+                          <input
+                            class="rows-form-content-sign__input"
+                            id="password-input__reg"
+                            type="password"
+                          />
+                          <span>Password</span>
+                          <a
+                            href="#"
+                            class="rows-form-content-sign-label__password password-control"
+                            onclick="return showHidePasswor(this,'password-input__reg');"
+                          ></a>
+                        </label>
+                        <div class="form__er">Пароль не совпадает</div>
+                      </div>
+                      <div class="rows-form-content-sign__row">
+                        <label
+                          id="conf_password"
+                          class="rows-form-content-sign__label"
+                        >
+                          <input
+                            class="rows-form-content-sign__input"
+                            id="password-input__reg-1"
+                            type="password"
+                          />
+                          <span>Password</span>
+                          <a
+                            href="#"
+                            class="rows-form-content-sign-label__password password-control"
+                            onclick="return showHidePasswor(this,'password-input__reg-1');"
+                          ></a>
+                        </label>
+                        <div class="form__e">Неверный Пароль</div>
+                      </div>
+                      <!-- <div class="rows-form-content-sign__row">
+                        <label
+                          id="conf_password"
+                          class="rows-form-content-sign__label"
+                        >
+                          <input
+                            class="rows-form-content-sign__input"
+                            id="password-input"
+                            type="password"
+                          />
+                          <span>Confirm password</span>
+                          <a
+                            href="#"
+                            class="rows-form-content-sign-label__password password-control"
+                            onclick="return show_hide_password(this);"
+                          ></a>
+                        </label>
+                        <div class="form__error">Пароль не совпадает</div>
+                      </div> -->
+                      <a
+                        id="button-create"
+                        type="submit"
+                        class="form-content-sign__button button"
+                      >
+                        <span>Войти</span>
+                      </a>
+                      <div class="content-sign__bottom bottom-content-sign">
+                        <h6 class="bottom-content-sign__title">
+                          <a href=""><span>ИЛИ</span></a>
+                        </h6>
+                        <div class="bottom-content-sign__icons">
+                          <div class="bottom-content-sign__row">
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="#1877F2"
+                                  ></path>
+                                  <path
+                                    d="M35.5 24C35.5 17.9249 30.5751 13 24.5 13C18.4249 13 13.5 17.9249 13.5 24C13.5 29.4904 17.5225 34.0412 22.7812 34.8663V27.1797H19.9883V24H22.7812V21.5766C22.7812 18.8197 24.4235 17.2969 26.9361 17.2969C28.1396 17.2969 29.3984 17.5117 29.3984 17.5117V20.2188H28.0113C26.6449 20.2188 26.2188 21.0667 26.2188 21.9366V24H29.2695L28.7818 27.1797H26.2188V34.8663C31.4775 34.0412 35.5 29.4904 35.5 24Z"
+                                    fill="white"
+                                  ></path>
+                                </svg>
+                              </a>
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="#1D9BF0"
+                                  ></path>
+                                  <g clip-path="url(#clip0_150_9710)">
+                                    <path
+                                      d="M33.1893 18.7772C33.2026 18.9793 33.2026 19.1814 33.2026 19.3854C33.2026 25.6004 28.6961 32.7683 20.4559 32.7683V32.7646C18.0217 32.7683 15.6381 32.0362 13.5889 30.6559C13.9428 30.7006 14.2985 30.723 14.6552 30.7239C16.6724 30.7258 18.632 30.0151 20.219 28.7066C18.302 28.6684 16.621 27.3561 16.0337 25.4402C16.7052 25.5762 17.3972 25.5483 18.0563 25.3592C15.9663 24.9159 14.4627 22.9879 14.4627 20.7489V20.6893C15.0854 21.0535 15.7827 21.2556 16.4959 21.2779C14.5274 19.8967 13.9206 17.1473 15.1094 14.9977C17.3839 17.9362 20.7398 19.7225 24.3423 19.9116C23.9812 18.278 24.4744 16.5661 25.6383 15.4177C27.4427 13.637 30.2805 13.7282 31.9766 15.6217C32.9799 15.414 33.9415 15.0275 34.8215 14.4798C34.4871 15.5686 33.7872 16.4935 32.8522 17.0812C33.7402 16.9713 34.6077 16.7217 35.4248 16.3407C34.8233 17.287 34.0657 18.1113 33.1893 18.7772Z"
+                                      fill="white"
+                                    ></path>
+                                  </g>
+                                  <defs>
+                                    <clipPath id="clip0_150_9710">
+                                      <rect
+                                        width="22"
+                                        height="19"
+                                        fill="white"
+                                        transform="translate(13.5 14)"
+                                      ></rect>
+                                    </clipPath>
+                                  </defs>
+                                </svg>
+                              </a>
+
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="#EA4335"
+                                  ></path>
+                                  <path
+                                    d="M35.06 24.25C35.06 23.47 34.99 22.72 34.86 22H24.5V26.26H30.42C30.16 27.63 29.38 28.79 28.21 29.57V32.34H31.78C33.86 30.42 35.06 27.6 35.06 24.25Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M24.4997 34.9996C27.4697 34.9996 29.9597 34.0196 31.7797 32.3396L28.2097 29.5696C27.2297 30.2296 25.9797 30.6296 24.4997 30.6296C21.6397 30.6296 19.2097 28.6996 18.3397 26.0996H14.6797V28.9396C16.4897 32.5296 20.1997 34.9996 24.4997 34.9996Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M18.34 26.0903C18.12 25.4303 17.99 24.7303 17.99 24.0003C17.99 23.2703 18.12 22.5703 18.34 21.9103V19.0703H14.68C13.93 20.5503 13.5 22.2203 13.5 24.0003C13.5 25.7803 13.93 27.4503 14.68 28.9303L17.53 26.7103L18.34 26.0903Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    d="M24.4997 17.38C26.1197 17.38 27.5597 17.94 28.7097 19.02L31.8597 15.87C29.9497 14.09 27.4697 13 24.4997 13C20.1997 13 16.4897 15.47 14.6797 19.07L18.3397 21.91C19.2097 19.31 21.6397 17.38 24.4997 17.38Z"
+                                    fill="white"
+                                  ></path></svg
+                              ></a>
+
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                            <div class="bottom-content-sign__column">
+                              <a href="">
+                                <svg
+                                  width="49"
+                                  height="48"
+                                  viewBox="0 0 49 48"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z"
+                                    fill="white"
+                                  ></path>
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M1.17606 24C1.17606 36.8815 11.6185 47.3239 24.5 47.3239C37.3815 47.3239 47.8239 36.8815 47.8239 24C47.8239 11.1185 37.3815 0.676056 24.5 0.676056C11.6185 0.676056 1.17606 11.1185 1.17606 24ZM24.5 0C11.2452 0 0.5 10.7452 0.5 24C0.5 37.2548 11.2452 48 24.5 48C37.7548 48 48.5 37.2548 48.5 24C48.5 10.7452 37.7548 0 24.5 0Z"
+                                    fill="#DDDDE1"
+                                  ></path>
+                                  <path
+                                    d="M34.4758 14L25.8301 20.4213L27.4289 16.6328L34.4758 14Z"
+                                    fill="black"
+                                    stroke="#E2761B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M14.5169 14L23.093 20.4821L21.5724 16.6328L14.5169 14ZM31.3651 28.8845L29.0625 32.4123L33.9892 33.7678L35.4056 28.9627L31.3651 28.8845ZM13.6045 28.9627L15.0121 33.7678L19.9389 32.4123L17.6363 28.8845L13.6045 28.9627Z"
+                                    fill="#E4761B"
+                                    stroke="#E4761B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M19.661 22.9232L18.2881 24.9999L23.1801 25.2172L23.0063 19.9602L19.661 22.9232ZM29.332 22.9232L25.9432 19.8994L25.8303 25.2172L30.7136 24.9999L29.332 22.9232ZM19.939 32.4118L22.876 30.9781L20.3387 28.997L19.939 32.4118ZM26.117 30.9781L29.0626 32.4118L28.6542 28.997L26.117 30.9781Z"
+                                    fill="#E4761B"
+                                    stroke="#E4761B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M29.0621 32.4117L26.1165 30.978L26.3511 32.8983L26.325 33.7064L29.0621 32.4117ZM19.9385 32.4117L22.6756 33.7064L22.6582 32.8983L22.8754 30.978L19.9385 32.4117Z"
+                                    fill="#D7C1B3"
+                                    stroke="#D7C1B3"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M22.7199 27.7287L20.2695 27.0075L21.9987 26.2168L22.7199 27.7287ZM26.2737 27.7287L26.9949 26.2168L28.7328 27.0075L26.2737 27.7287Z"
+                                    fill="#233447"
+                                    stroke="#233447"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M19.9384 32.4123L20.3554 28.8845L17.6357 28.9627L19.9384 32.4123ZM28.6449 28.8845L29.062 32.4123L31.3646 28.9627L28.6449 28.8845ZM30.7129 25.0005L25.8296 25.2177L26.2814 27.7289L27.0026 26.217L28.7405 27.0077L30.7129 25.0005ZM20.2686 27.0077L22.0064 26.217L22.7189 27.7289L23.1794 25.2177L18.2874 25.0005L20.2686 27.0077Z"
+                                    fill="#CD6116"
+                                    stroke="#CD6116"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M18.2881 25.0005L20.3387 28.9975L20.2692 27.0077L18.2881 25.0005ZM28.7411 27.0077L28.6542 28.9975L30.7136 25.0005L28.7411 27.0077ZM23.1801 25.2177L22.7196 27.7289L23.293 30.6919L23.4234 26.7905L23.1801 25.2177ZM25.8303 25.2177L25.5957 26.7818L25.6999 30.6919L26.2821 27.7289L25.8303 25.2177Z"
+                                    fill="#E4751F"
+                                    stroke="#E4751F"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M26.2824 27.7285L25.7003 30.6915L26.1173 30.9783L28.6546 28.9971L28.7415 27.0073L26.2824 27.7285ZM20.2695 27.0073L20.339 28.9971L22.8763 30.9783L23.2934 30.6915L22.7199 27.7285L20.2695 27.0073Z"
+                                    fill="#F6851B"
+                                    stroke="#F6851B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M26.325 33.7073L26.3511 32.8992L26.1338 32.708H22.858L22.6582 32.8992L22.6756 33.7073L19.9385 32.4126L20.8943 33.1946L22.832 34.5414H26.1599L28.1063 33.1946L29.0621 32.4126L26.325 33.7073Z"
+                                    fill="#C0AD9E"
+                                    stroke="#C0AD9E"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M26.1165 30.9781L25.6994 30.6914H23.2925L22.8754 30.9781L22.6582 32.8984L22.8581 32.7073H26.1339L26.3511 32.8984L26.1165 30.9781Z"
+                                    fill="#161616"
+                                    stroke="#161616"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M34.8406 20.8384L35.5792 17.2932L34.4757 14L26.1167 20.2041L29.3317 22.9238L33.8761 24.2532L34.8841 23.0802L34.4496 22.7673L35.1447 22.133L34.606 21.716L35.3012 21.1859L34.8406 20.8384ZM13.4219 17.2932L14.1605 20.8384L13.6912 21.1859L14.3864 21.716L13.8563 22.133L14.5515 22.7673L14.117 23.0802L15.1163 24.2532L19.6607 22.9238L22.8757 20.2041L14.5167 14L13.4219 17.2932Z"
+                                    fill="#763D16"
+                                    stroke="#763D16"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path>
+                                  <path
+                                    d="M33.8763 24.2532L29.3319 22.9238L30.7134 25.0005L28.6541 28.9975L31.3651 28.9627H35.4056L33.8763 24.2532ZM19.6608 22.9238L15.1164 24.2532L13.6045 28.9627H17.6363L20.3386 28.9975L18.2879 25.0005L19.6608 22.9238ZM25.8301 25.2177L26.1169 20.2041L27.4376 16.6328H21.5724L22.8758 20.2041L23.1799 25.2177L23.2842 26.7991L23.2929 30.6919H25.6998L25.7172 26.7991L25.8301 25.2177Z"
+                                    fill="#F6851B"
+                                    stroke="#F6851B"
+                                    stroke-width="0.3168"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></path></svg
+                              ></a>
+
+                              <a href="" class="bottom-content-sign__icon"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="content-sign__text">
+                      <a href="#popup" class="content-sign_link popup-link"
+                        ><span> Уже есть аккаунт </span></a
+                      >
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav hidden class="menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__body"></div>
+          </nav>
+        </div>
+      </div>
+      <div class="header__body body-header">
+        <div class="body-header__container">
+          <a href="" class="body-header__logo _icon-logo"></a>
+          <div
+            data-da="catalog-header__container,479.98"
+            class="body-header__search"
+          >
+            <form action="#" class="search-header">
+              <button
+                type="submit"
+                class="search-header__button _icon-search"
+              ></button>
+              <input
+                autocomplete="off"
+                name="form[]"
+                data-error="Ошибка"
+                placeholder="Поиск"
+                type="text"
+                class="search-header__input"
+              />
+            </form>
+          </div>
+          <div class="body-header__actions actions-header">
+            <a href="" class="actions-header__location _icon-location"
+              ><span>Москва</span></a
+            >
+            <div
+              data-da="top-header__container,0, 991.98"
+              class="actions-header__phones phones-header"
+            >
+              <div class="phones-header__items">
+                <div class="phones-header__item">
+                  <a class="phones-header__phone _icon-call"
+                    ><span>8-800-777-49-67 </span></a
+                  >
+                  <button
+                    type="button"
+                    class="phones-header__arrow _icon-arrow-down"
+                  ></button>
+                  <ul class="phones-header__list">
+                    <li class="phones-header__phone">8-800-777-49-67</li>
+                    <li class="phones-header__phone">8-800-777-49-67</li>
+                    <li class="phones-header__phone">8-800-777-49-67</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <button class="phones-header__callback">Заказать звонок</button> -->
+            </div>
+            <a
+              href=""
+              data-da="top-header__container,2,991.98"
+              class="actions-header__favourite _icon-favourite"
+            ></a>
+            <a
+              href=""
+              data-da="top-header__container,2,991.98"
+              class="actions-header__cart cart-header"
+            >
+              <div class="cart-header__icon _icon-trash"><span>0</span></div>
+              <div class="cart-header__body">
+                <!-- <div class="cart-header__summ">0 р.</div> -->
+                <div class="cart-header__link">Оформить заказ</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__catalog catalog-header">
+        <div class="catalog-header__container">
+          <nav class="catalog-header__menu menu-catalog">
+            <button type="button" class="menu-catalog__back">Назад</button>
+            <ul class="menu-catalog__list">
+              <li class="menu-catalog__item">
+                <button data-parent="1" class="menu-catalog__link">
+                  Каталог ножей
+                </button>
+              </li>
+              <li class="menu-catalog__item">
+                <button data-parent="2" class="menu-catalog__link">
+                  Клинковое оружие
+                </button>
+              </li>
+              <li class="menu-catalog__item">
+                <a href="" class="menu-catalog__link">Сувенирные изделия</a>
+              </li>
+              <li class="menu-catalog__item">
+                <a href="" class="menu-catalog__link">Фонари ARMYTEK</a>
+              </li>
+              <li class="menu-catalog__item">
+                <a href="" class="menu-catalog__link">Сопуствующие товары</a>
+              </li>
+            </ul>
+            <div class="menu-catalog__sub-menu sub-menu-catalog">
+              <button type="button" class="sub-menu-catalog__back">
+                Назад
+              </button>
+              <div class="sub-menu-catalog__container">
+                <div hidden data-submenu="1" class="sub-menu-catalog__block">
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Категория ножей</a
+                    >
+                  </div>
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Производство ножей</a
+                    >
+                  </div>
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Ножи по маркам стали</a
+                    >
+                  </div>
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Заточка и полировка ножей</a
+                    >
+                  </div>
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Ножевая мастерская</a
+                    >
+                  </div>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Разделочные ножи</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Туристические ножи</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи охотничьи</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Булатные ножи</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из дамаска</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Тактического назначения</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Метательные ножи</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Мачете и кукри</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи кухонные</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Ножи АИР</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Ножи ЗИК</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Ножи ЗЗОСС</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи РОСоружие</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи Оружейник</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Булат Сергея Баранова</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Булат Андрея Умерова</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Ножи Златко</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Ножи Стиль-М</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Оружейная компания</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали 40х102С2М</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали 95х18</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали 100х13м</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали 110х18м-ШД</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали ЭИ-107 ТЦ</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали 50х14МФ</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали AUS-8</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали К340</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали M390</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножи из стали ЭП-766</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Паста ГОИ</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">
+                        Алмазная паста</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Бруски и камни для заточки</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Заточные системы</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножевые клинки</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">
+                        Заготовки для ножей</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Литье для ножей</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Материалы для рукоятей</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Уход за рукоятиями ножей</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                </div>
+                <div hidden data-submenu="2" class="sub-menu-catalog__block">
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Категория ножей</a
+                    >
+                  </div>
+                  <div class="sub-menu-catalog__category">
+                    <a href="" class="sub-menu-catalog__link-category"
+                      >Производство ножей</a
+                    >
+                  </div>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">Паста ГОИ</a>
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">
+                        Алмазная паста</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Бруски и камни для заточки</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Заточные системы</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="sub-menu-catalog__list">
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Ножевые клинки</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link">
+                        Заготовки для ножей</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Литье для ножей</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Материалы для рукоятей</a
+                      >
+                    </li>
+                    <li class="sub-menu-catalog__item">
+                      <a href="" class="sub-menu-catalog__link"
+                        >Уход за рукоятиями ножей</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                  <div class="sub-menu-catalog__footer">
+                    <a href="" class="sub-menu-catalog__all">Смотреть все</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page page_home">
+      <section class="page__main-block main-block">
+        <div class="main-block__container">
+          <div class="main-block__body">
+            <div
+              class="main-block__slider swiper swiper-initialized swiper-pointer-events"
+            >
+              <div class="main-block__swiper swiper-wrapper">
+                <div class="main-block__slide slide-main-block swiper-slide">
+                  <div class="slide-main-block__content">
+                    <h2
+                      data-swiper-parallax="-100"
+                      class="slide-main-block__title"
+                    >
+                      Интернет магазин сертифицированных
+                    </h2>
+                    <div
+                      data-swiper-parallax="-150"
+                      class="slide-main-block__sub-title"
+                    >
+                      златоустовских ножей
+                    </div>
+                    <div
+                      data-swiper-parallax="-200"
+                      class="slide-main-block__text"
+                    >
+                      Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                      магазине представлен наиболее широкий выбор Златоустовских
+                      ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                      являемся официальными поставщиками.
+                    </div>
+                  </div>
+                  <a
+                    data-swiper-parallax="-300"
+                    href=""
+                    class="slide-main-block__button button"
+                    >Подробнее</a
+                  >
+                </div>
+                <div class="main-block__slide slide-main-block swiper-slide">
+                  <div class="slide-main-block__content">
+                    <h2
+                      data-swiper-parallax="-100"
+                      class="slide-main-block__title"
+                    >
+                      Интернет магазин сертифицированных
+                    </h2>
+                    <div
+                      data-swiper-parallax="-150"
+                      class="slide-main-block__sub-title"
+                    >
+                      златоустовских ножей
+                    </div>
+                    <div
+                      data-swiper-parallax="-200"
+                      class="slide-main-block__text"
+                    >
+                      Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                      магазине представлен наиболее широкий выбор Златоустовских
+                      ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                      являемся официальными поставщиками.
+                    </div>
+                  </div>
+                  <a
+                    data-swiper-parallax="-300"
+                    href=""
+                    class="slide-main-block__button button"
+                    >Подробнее</a
+                  >
+                </div>
+                <div class="main-block__slide slide-main-block swiper-slide">
+                  <div class="slide-main-block__content">
+                    <h2
+                      data-swiper-parallax="-100"
+                      class="slide-main-block__title"
+                    >
+                      Интернет магазин сертифицированных
+                    </h2>
+                    <div
+                      data-swiper-parallax="-150"
+                      class="slide-main-block__sub-title"
+                    >
+                      златоустовских ножей
+                    </div>
+                    <div
+                      data-swiper-parallax="-200"
+                      class="slide-main-block__text"
+                    >
+                      Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                      магазине представлен наиболее широкий выбор Златоустовских
+                      ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                      являемся официальными поставщиками.
+                    </div>
+                  </div>
+                  <a
+                    data-swiper-parallax="-300"
+                    href=""
+                    class="slide-main-block__button button"
+                    >Подробнее</a
+                  >
+                </div>
+                <div class="main-block__slide slide-main-block swiper-slide">
+                  <div class="slide-main-block__content">
+                    <h2
+                      data-swiper-parallax="-100"
+                      class="slide-main-block__title"
+                    >
+                      Интернет магазин сертифицированных
+                    </h2>
+                    <div
+                      data-swiper-parallax="-150"
+                      class="slide-main-block__sub-title"
+                    >
+                      златоустовских ножей
+                    </div>
+                    <div
+                      data-swiper-parallax="-200"
+                      class="slide-main-block__text"
+                    >
+                      Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                      магазине представлен наиболее широкий выбор Златоустовских
+                      ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                      являемся официальными поставщиками.
+                    </div>
+                  </div>
+                  <a
+                    data-swiper-parallax="-300"
+                    href=""
+                    class="slide-main-block__button button"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="main-block__controll controll-main-block">
+                <div
+                  class="controll-main-block__dotts swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+                >
+                  <span class="swiper-pagination-bullet"></span
+                  ><span class="swiper-pagination-bullet"></span
+                  ><span class="swiper-pagination-bullet"></span
+                  ><span class="swiper-pagination-bullet"></span>
+                </div>
+                <div class="controll-main-block__fraction fraction-controll">
+                  <span class="fraction-controll__current">01</span>
+                  /
+                  <span class="fraction-controll__all">0</span>
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="main-block__media media-main-block">
+              <div class="media-main-block__body">
+                <div class="media-main-block__image">
+                  <img src="img/header_2/knife.png" alt="" />
+                </div>
+                <div class="media-main-block__tips">
+                  <button
+                    data-tippy-content="Бебра"
+                    class="media-main-block__tip media-main-block__tip_1"
+                  >
+                    <span>+</span>
+                  </button>
+                  <button
+                    data-tippy-content="Йоу"
+                    class="media-main-block__tip media-main-block__tip_2"
+                  >
+                    <span>+</span>
+                  </button>
+                  <button
+                    data-tippy-content="Подсказка"
+                    class="media-main-block__tip media-main-block__tip_3"
+                  >
+                    <span>+</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-block__advantages advantages-main">
+            <div class="advantages-main__item">
+              <div class="advantages-main__icon">
+                <img src="img/header_2/benefits/checkmark.svg" alt="" />
+              </div>
+              <div class="advantages-main__text">
+                Гарантия 100% возврата денежных средств
+              </div>
+            </div>
+            <div class="advantages-main__item">
+              <div class="advantages-main__icon">
+                <img src="img/header_2/benefits/track.svg" alt="" />
+              </div>
+              <div class="advantages-main__text">
+                Доставка по России, Казахстану и Белоруссии
+              </div>
+            </div>
+            <div class="advantages-main__item">
+              <div class="advantages-main__icon">
+                <img src="img/header_2/benefits/spisok.svg" alt="" />
+              </div>
+              <div class="advantages-main__text">
+                Возможность оформление заказа без регистрации.
+              </div>
+            </div>
+            <div class="advantages-main__item">
+              <div class="advantages-main__icon">
+                <img src="img/header_2/benefits/procent.svg" alt="" />
+              </div>
+              <div class="advantages-main__text">
+                Скидки постоянным покупателям.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__catalog-cards catalog-cards">
+        <div class="catalog-cards__container">
+          <div class="catalog-cards__item item-catalog-cards">
+            <div class="item-catalog-cards__body">
+              <h3 class="item-catalog-cards__title">
+                <a href="#" class="item-catalog-cards__link-title"
+                  >Каталог ножей</a
+                >
+              </h3>
+              <ul class="item-catalog-cards__list">
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Разделочные </a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Туристические</a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Охотничьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-catalog-cards__image">
+              <img src="img/knifes/knife_1.png" alt="Картинка" />
+            </div>
+          </div>
+          <div class="catalog-cards__item item-catalog-cards">
+            <div class="item-catalog-cards__body">
+              <h3 class="item-catalog-cards__title">
+                <a href="#" class="item-catalog-cards__link-title"
+                  >Среднеклинковое оружие</a
+                >
+              </h3>
+              <ul class="item-catalog-cards__list">
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Разделочные </a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Туристические</a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Охотничьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-catalog-cards__image">
+              <img src="img/knifes/knife_2.png" alt="Картинка" />
+            </div>
+          </div>
+          <div class="catalog-cards__item item-catalog-cards">
+            <div class="item-catalog-cards__body">
+              <h3 class="item-catalog-cards__title">
+                <a href="#" class="item-catalog-cards__link-title"
+                  >Длинноклинковое оружие</a
+                >
+              </h3>
+              <ul class="item-catalog-cards__list">
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Разделочные </a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Туристические</a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Охотничьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-catalog-cards__image">
+              <img src="img/knifes/knife_3.png" alt="Картинка" />
+            </div>
+          </div>
+          <div class="catalog-cards__item item-catalog-cards">
+            <div class="item-catalog-cards__body">
+              <h3 class="item-catalog-cards__title">
+                <a href="#" class="item-catalog-cards__link-title"
+                  >Сувенирные изделия</a
+                >
+              </h3>
+              <ul class="item-catalog-cards__list">
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Разделочные </a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Туристические</a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Охотничьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-catalog-cards__image">
+              <img src="img/knifes/knife_4.png" alt="Картинка" />
+            </div>
+          </div>
+          <div class="catalog-cards__item item-catalog-cards">
+            <div class="item-catalog-cards__body">
+              <h3 class="item-catalog-cards__title">
+                <a href="#" class="item-catalog-cards__link-title"
+                  >Сопутствующие товары</a
+                >
+              </h3>
+              <ul class="item-catalog-cards__list">
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Разделочные </a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Туристические</a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Охотничьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-catalog-cards__image">
+              <img src="img/knifes/knife_5.png" alt="Картинка" />
+            </div>
+          </div>
+          <div class="catalog-cards__item item-catalog-cards">
+            <div class="item-catalog-cards__body">
+              <h3 class="item-catalog-cards__title">
+                <a href="#" class="item-catalog-cards__link-title"
+                  >Ножевая мастерская</a
+                >
+              </h3>
+              <ul class="item-catalog-cards__list">
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Разделочные </a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Туристические</a>
+                </li>
+                <li class="item-catalog-cards__item">
+                  <a href="" class="item-catalog-cards__link">Охотничьи</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-catalog-cards__image">
+              <img src="img/knifes/knife_6.png" alt="Картинка" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__products-slider products-slider">
+        <div class="products-slider__container">
+          <div class="products-slider__header">
+            <h2 class="products-slider__title">Хиты продаж</h2>
+            <a href="" class="products-slider__more">
+              Все акции
+              <svg
+                class="bebra"
+                width="10"
+                height="16"
+                viewBox="0 0 10 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.23089 8.67584L2.00808 15.4644C1.54862 15.8965 0.803689 15.8965 0.344454 15.4644C-0.114818 15.0327 -0.114818 14.3326 0.344454 13.901L6.73553 7.89411L0.34464 1.88747C-0.114632 1.45562 -0.114632 0.75556 0.34464 0.323886C0.803912 -0.107962 1.54881 -0.107962 2.00827 0.323886L9.23108 7.11256C9.46072 7.32851 9.57541 7.61122 9.57541 7.89408C9.57541 8.17707 9.46049 8.46 9.23089 8.67584Z"
+                  fill="#E8AA31"
+                /></svg
+            ></a>
+          </div>
+          <div
+            class="products-slider__slider swiper-initialized swiper-pointer-events"
+          >
+            <div class="products-slider__swiper swiper-wrapper">
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="products-slider__slide swiper-slide">
+                <article class="product-card">
+                  <a href="" class="product-card__image">
+                    <span class="product-card__item-image-ibg">
+                      <img src="img/bestsellers/kinfe.png" alt="" />
+                    </span>
+                  </a>
+                  <div class="product-card__body">
+                    <h4 class="product-card__title">
+                      <a href="" class="product-card__link-title">Нож Лиса</a>
+                    </h4>
+                    <div class="product-card__info info-product-card">
+                      <div class="info-product-card__size">95х18</div>
+                      <div class="info-product-card__materials">
+                        Орех, Алюминий
+                      </div>
+                    </div>
+                    <div class="product-card__rating rating rating_set">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="1"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="2"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="3"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="4"
+                            name="rating"
+                          />
+                          <input
+                            type="radio"
+                            class="rating__item"
+                            value="5"
+                            name="rating"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">3.6</div>
+                      <div class="rating__info">12 отзывов</div>
+                    </div>
+                    <div class="product-card__footer">
+                      <div class="product-card__price">2 719 р.</div>
+                      <a
+                        href=""
+                        class="product-card__compare _icon-compare"
+                      ></a>
+                      <a
+                        href=""
+                        class="product-card__favourite _icon-favourite"
+                      ></a>
+                    </div>
+                    <button type="button" class="product-card__cart button">
+                      <span class="_icon-trash">В корзину</span>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div
+              class="product-slider__dotts dotts swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+            >
+              <span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span
+              ><span class="swiper-pagination-bullet"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__new-products products-new">
+        <div class="products-new">
+          <div class="products-new__inner">
+            <div class="products-new__container">
+              <div class="products-new__body">
+                <div class="products-new__section">
+                  <h2 class="products-new__title">Новинки</h2>
+                  <div class="products-new__text">
+                    Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                    магазине представлен наиболее широкий выбор Златоустовских
+                    ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                    являемся официальными поставщиками.
+                  </div>
+                  <a
+                    href=""
+                    class="products-new__link link-arrow _icon-arrow-down"
+                    ><span>Больше новинок</span>
+                  </a>
+                </div>
+              </div>
+              <div class="products-new__content">
+                <div class="products-new__slider swiper">
+                  <div class="products-new__swiper swiper-wrapper">
+                    <div class="products-new__slide swiper-slide">
+                      <article class="product-card">
+                        <a href="" class="product-card__image">
+                          <span class="product-card__item-image-ibg">
+                            <img src="img/bestsellers/kinfe.png" alt="" />
+                          </span>
+                        </a>
+                        <div class="product-card__body">
+                          <h4 class="product-card__title">
+                            <a href="" class="product-card__link-title"
+                              >Нож Лиса</a
+                            >
+                          </h4>
+                          <div class="product-card__info info-product-card">
+                            <div class="info-product-card__size">95х18</div>
+                            <div class="info-product-card__materials">
+                              Орех, Алюминий
+                            </div>
+                          </div>
+                          <div class="product-card__rating rating rating_set">
+                            <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="1"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="2"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="3"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="4"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="5"
+                                  name="rating"
+                                />
+                              </div>
+                            </div>
+                            <div class="rating__value">3.6</div>
+                            <div class="rating__info">12 отзывов</div>
+                          </div>
+                          <div class="product-card__footer">
+                            <div class="product-card__price">2 719 р.</div>
+                            <a
+                              href=""
+                              class="product-card__compare _icon-compare"
+                            ></a>
+                            <a
+                              href=""
+                              class="product-card__favourite _icon-favourite"
+                            ></a>
+                          </div>
+                          <button
+                            type="button"
+                            class="product-card__cart button"
+                          >
+                            <span class="_icon-trash">В корзину</span>
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="products-new__slide swiper-slide">
+                      <article class="product-card">
+                        <a href="" class="product-card__image">
+                          <span class="product-card__item-image-ibg">
+                            <img src="img/bestsellers/kinfe.png" alt="" />
+                          </span>
+                        </a>
+                        <div class="product-card__body">
+                          <h4 class="product-card__title">
+                            <a href="" class="product-card__link-title"
+                              >Нож Лиса</a
+                            >
+                          </h4>
+                          <div class="product-card__info info-product-card">
+                            <div class="info-product-card__size">95х18</div>
+                            <div class="info-product-card__materials">
+                              Орех, Алюминий
+                            </div>
+                          </div>
+                          <div class="product-card__rating rating rating_set">
+                            <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="1"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="2"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="3"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="4"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="5"
+                                  name="rating"
+                                />
+                              </div>
+                            </div>
+                            <div class="rating__value">3.6</div>
+                            <div class="rating__info">12 отзывов</div>
+                          </div>
+                          <div class="product-card__footer">
+                            <div class="product-card__price">2 719 р.</div>
+                            <a
+                              href=""
+                              class="product-card__compare _icon-compare"
+                            ></a>
+                            <a
+                              href=""
+                              class="product-card__favourite _icon-favourite"
+                            ></a>
+                          </div>
+                          <button
+                            type="button"
+                            class="product-card__cart button"
+                          >
+                            <span class="_icon-trash">В корзину</span>
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="products-new__slide swiper-slide">
+                      <article class="product-card">
+                        <a href="" class="product-card__image">
+                          <span class="product-card__item-image-ibg">
+                            <img src="img/bestsellers/kinfe.png" alt="" />
+                          </span>
+                        </a>
+                        <div class="product-card__body">
+                          <h4 class="product-card__title">
+                            <a href="" class="product-card__link-title"
+                              >Нож Лиса</a
+                            >
+                          </h4>
+                          <div class="product-card__info info-product-card">
+                            <div class="info-product-card__size">95х18</div>
+                            <div class="info-product-card__materials">
+                              Орех, Алюминий
+                            </div>
+                          </div>
+                          <div class="product-card__rating rating rating_set">
+                            <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="1"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="2"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="3"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="4"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="5"
+                                  name="rating"
+                                />
+                              </div>
+                            </div>
+                            <div class="rating__value">3.6</div>
+                            <div class="rating__info">12 отзывов</div>
+                          </div>
+                          <div class="product-card__footer">
+                            <div class="product-card__price">2 719 р.</div>
+                            <a
+                              href=""
+                              class="product-card__compare _icon-compare"
+                            ></a>
+                            <a
+                              href=""
+                              class="product-card__favourite _icon-favourite"
+                            ></a>
+                          </div>
+                          <button
+                            type="button"
+                            class="product-card__cart button"
+                          >
+                            <span class="_icon-trash">В корзину</span>
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="products-new__slide swiper-slide">
+                      <article class="product-card">
+                        <a href="" class="product-card__image">
+                          <span class="product-card__item-image-ibg">
+                            <img src="img/bestsellers/kinfe.png" alt="" />
+                          </span>
+                        </a>
+                        <div class="product-card__body">
+                          <h4 class="product-card__title">
+                            <a href="" class="product-card__link-title"
+                              >Нож Лиса</a
+                            >
+                          </h4>
+                          <div class="product-card__info info-product-card">
+                            <div class="info-product-card__size">95х18</div>
+                            <div class="info-product-card__materials">
+                              Орех, Алюминий
+                            </div>
+                          </div>
+                          <div class="product-card__rating rating rating_set">
+                            <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="1"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="2"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="3"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="4"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="5"
+                                  name="rating"
+                                />
+                              </div>
+                            </div>
+                            <div class="rating__value">3.6</div>
+                            <div class="rating__info">12 отзывов</div>
+                          </div>
+                          <div class="product-card__footer">
+                            <div class="product-card__price">2 719 р.</div>
+                            <a
+                              href=""
+                              class="product-card__compare _icon-compare"
+                            ></a>
+                            <a
+                              href=""
+                              class="product-card__favourite _icon-favourite"
+                            ></a>
+                          </div>
+                          <button
+                            type="button"
+                            class="product-card__cart button"
+                          >
+                            <span class="_icon-trash">В корзину</span>
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="products-new__slide swiper-slide">
+                      <article class="product-card">
+                        <a href="" class="product-card__image">
+                          <span class="product-card__item-image-ibg">
+                            <img src="img/bestsellers/kinfe.png" alt="" />
+                          </span>
+                        </a>
+                        <div class="product-card__body">
+                          <h4 class="product-card__title">
+                            <a href="" class="product-card__link-title"
+                              >Нож Лиса</a
+                            >
+                          </h4>
+                          <div class="product-card__info info-product-card">
+                            <div class="info-product-card__size">95х18</div>
+                            <div class="info-product-card__materials">
+                              Орех, Алюминий
+                            </div>
+                          </div>
+                          <div class="product-card__rating rating rating_set">
+                            <div class="rating__body">
+                              <div class="rating__active"></div>
+                              <div class="rating__items">
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="1"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="2"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="3"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="4"
+                                  name="rating"
+                                />
+                                <input
+                                  type="radio"
+                                  class="rating__item"
+                                  value="5"
+                                  name="rating"
+                                />
+                              </div>
+                            </div>
+                            <div class="rating__value">3.6</div>
+                            <div class="rating__info">12 отзывов</div>
+                          </div>
+                          <div class="product-card__footer">
+                            <div class="product-card__price">2 719 р.</div>
+                            <a
+                              href=""
+                              class="product-card__compare _icon-compare"
+                            ></a>
+                            <a
+                              href=""
+                              class="product-card__favourite _icon-favourite"
+                            ></a>
+                          </div>
+                          <button
+                            type="button"
+                            class="product-card__cart button"
+                          >
+                            <span class="_icon-trash">В корзину</span>
+                          </button>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                  <div
+                    class="product-new__dotts dotts swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"
+                  >
+                    <span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span
+                    ><span class="swiper-pagination-bullet"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__articles-module articles-module">
+        <div class="articles-module__container">
+          <h2 class="articles-module__title">Наши статьи</h2>
+          <div class="articles-module__items">
+            <article class="articles-module__item item-article">
+              <a href="" class="item-article__image-ibg">
+                <img src="img/article/article_1.jpg" alt="" />
+              </a>
+              <div class="item-article__body">
+                <h4 class="item-article__title">
+                  <a href="" class="item-article__link-title"
+                    >Все о ножах: как правильно выбрать</a
+                  >
+                </h4>
+                <div class="item-article__date">24.07.2019</div>
+              </div>
+            </article>
+            <article class="articles-module__item item-article">
+              <a href="" class="item-article__image-ibg">
+                <img src="img/article/article_2.jpg" alt="" />
+              </a>
+              <div class="item-article__body">
+                <h4 class="item-article__title">
+                  <a href="" class="item-article__link-title"
+                    >Как правильно выбрать фонарь</a
+                  >
+                </h4>
+                <div class="item-article__date">24.07.2019</div>
+              </div>
+            </article>
+            <article class="articles-module__item item-article">
+              <a href="" class="item-article__image-ibg">
+                <img src="img/article/article_3.jpg" alt="" />
+              </a>
+              <div class="item-article__body">
+                <h4 class="item-article__title">
+                  <a href="" class="item-article__link-title"
+                    >Кухонные ножи для хозяек</a
+                  >
+                </h4>
+                <div class="item-article__date">24.07.2019</div>
+              </div>
+            </article>
+            <article class="articles-module__item item-article">
+              <a href="" class="item-article__image-ibg">
+                <img src="img/article/article_4.jpg" alt="" />
+              </a>
+              <div class="item-article__body">
+                <h4 class="item-article__title">
+                  <a href="" class="item-article__link-title"
+                    >Кухонные ножи для хозяек</a
+                  >
+                </h4>
+                <div class="item-article__date">24.07.2019</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="page__products-block products-block">
+        <div class="products-block__container">
+          <div class="products-block__item product-block">
+            <div class="product-block__body">
+              <h4 class="product-block__title">
+                <a href="" class="product-block__link-title"
+                  >Тактические фонари</a
+                >
+              </h4>
+              <div class="product-block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <a href="" class="product-block__button button">Подробнее</a>
+            </div>
+            <div class="product-block__image">
+              <img src="img/lights_1/fish_fonar 1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="products-block__item product-block">
+            <div class="product-block__body">
+              <h4 class="product-block__title">
+                <a href="" class="product-block__link-title"
+                  >Палобные мультифонари</a
+                >
+              </h4>
+              <div class="product-block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <a href="" class="product-block__button button">Подробнее</a>
+            </div>
+            <div class="product-block__image">
+              <img src="img/lights_1/lights_2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__text text-footer">
+        <div class="text-footer__container">
+          <h1 class="text-footer__title">
+            Златоустовские ножи интернет-магазин "ЗЛАТМАКС"
+          </h1>
+          <div class="text-footer__text">
+            Наш интернет-магазин "ЗЛАТМАКС" предлагает Вам ножи очень высокого
+            качества из города оружейников - Златоуста. Златоустовские ножи
+            известны и популярны среди потребителей как на российским рынке, так
+            и за рубежом: ножи охотничьи, хозяйственные, туристические,
+            рыбацкие, складные и метательные. Нож Златоуста - это идеальный друг
+            и товарищ в повседневной жизни и в экстремальных ситуациях. На
+            многую продукцию распространяется гарантия до 10 лет - это один из
+            главных показателей качества. Для Вас на нашем сайте "zlatmax"
+            предложен огромный ассортимент Златоустовских ножей. Наши менеджеры
+            помогут определиться и подобрать самый лучший Златоустовский нож,
+            ориентируясь на Ваши пожелания.
+          </div>
+        </div>
+      </section>
+      <div class="footer__container">
+        <div class="footer__body body-footer">
+          <div class="body-footer__row">
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spoller-item-footer__title"
+                  >
+                    <span>ИНФОРМАЦИЯ</span>
+                  </button>
+
+                  <div class="spoller-item-footer__body">
+                    <nav class="menu-footer">
+                      <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Златоустовские ножи в Москве и Московской
+                            области</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link">Ножевые стали</a>
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link">О нас</a>
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Условия оплаты и доставки</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Политика конфиденциальности</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spoller-item-footer__title"
+                  >
+                    <span>СЛУЖБА ПОДДЕРЖКИ</span>
+                  </button>
+                  <div class="spoller-item-footer__body">
+                    <nav class="menu-footer">
+                      <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link">
+                            Контактная информация</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Возврат товара</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link">Карта сайта</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spoller-item-footer__title"
+                  >
+                    <span>ДОПОЛНИТЕЛЬНО</span>
+                  </button>
+                  <div class="spoller-item-footer__body">
+                    <nav class="menu-footer">
+                      <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Подарочные сертификаты</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link">Партнеры</a>
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Товары со скидкой</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller
+                    class="spoller-item-footer__title"
+                  >
+                    <span>ЛИЧНЫЙ КАБИНЕТ</span>
+                  </button>
+                  <div class="spoller-item-footer__body">
+                    <nav class="menu-footer">
+                      <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Личный кабинет</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >История заказов</a
+                          >
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link">Мои закладки</a>
+                        </li>
+                        <li class="menu-footer__item">
+                          <a href="" class="menu-footer__link"
+                            >Рассылка новостей</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-footer__row">
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767.98"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller=""
+                    class="spoller-item-footer__title"
+                    tabindex="-1"
+                  >
+                    КОНТАКТЫ
+                  </button>
+                  <div class="spoller-item-footer__body">
+                    <nav class="menu-footer">
+                      <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                          <a
+                            href="tel:88007774967"
+                            class="menu-footer__link _icon-call"
+                            >8 (800) 777-49-67</a
+                          >
+                        </li>
+                        <li class="menu-footer__item _icon-time">
+                          <div>
+                            <p>Пн-Пт</p>
+                            <p>7:00 - 16:00 (МСК)</p>
+                          </div>
+                        </li>
+                        <li class="menu-footer__item _icon-location">
+                          <div>
+                            <p>Златоуст,</p>
+                            <p>ул. Шоссейная, д. 1,</p>
+                            <p>офис «6Б»</p>
+                          </div>
+                        </li>
+                        <li class="menu-footer__item">
+                          <a
+                            href="mailto:info@zlatmax.ru"
+                            class="menu-footer__link _icon-message"
+                            >info@zlatmax.ru</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <ul class="social-footer">
+                      <li class="social-footer__item">
+                        <a href="#" class="social-footer__link">
+                          <img src="img/footer/facebook.png" alt="Картинка" />
+                        </a>
+                      </li>
+                      <li class="social-footer__item">
+                        <a href="#" class="social-footer__link">
+                          <img src="img/footer/viber.png" alt="Картинка" />
+                        </a>
+                      </li>
+                      <li class="social-footer__item">
+                        <a href="#" class="social-footer__link">
+                          <img src="img/footer/telegram.png" alt="Картинка" />
+                        </a>
+                      </li>
+                      <li class="social-footer__item">
+                        <a href="#" class="social-footer__link">
+                          <img src="img/footer/whatsapp.png" alt="Картинка" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767.98"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller=""
+                    class="spoller-item-footer__title"
+                    tabindex="-1"
+                  >
+                    ПОЛЕЗНЫЕ ССЫЛКИ
+                  </button>
+                  <div class="spoller-item-footer__body">
+                    <nav class="menu-footer">
+                      <ul class="menu-footer__list">
+                        <li class="menu-footer__item">
+                          <a href="#" class="menu-footer__link"
+                            >Способы оплаты и доставки</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767.98"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller=""
+                    class="spoller-item-footer__title"
+                    tabindex="-1"
+                  >
+                    НАША ГАРАНТИЯ
+                  </button>
+                  <div class="spoller-item-footer__body">
+                    <div class="spoller-item-footer__text">
+                      Недовольны своей покупкой? Вы можете вернуть ее в течении
+                      30 дней с даты получения,<br />согласно
+                      <a href="">нашим правилам</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="body-footer__item item-footer">
+              <div
+                data-spollers="767.98"
+                class="item-footer__spoller spoller-item-footer"
+              >
+                <div class="spoller-item-footer__item">
+                  <button
+                    type="button"
+                    data-spoller=""
+                    class="spoller-item-footer__title"
+                    tabindex="-1"
+                  >
+                    НОВОСТНАЯ РАССЫЛКА
+                  </button>
+                  <form
+                    action="#"
+                    class="spoller-item-footer__body footer-subscribe"
+                  >
+                    <label for="subscribe-input" class="footer-subscribe__label"
+                      >Подпишитесь прямо сейчас!</label
+                    >
+                    <div class="footer-subscribe__line">
+                      <input
+                        id="subscribe-input"
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        data-required="email"
+                        placeholder="example@gmail.com"
+                        class="footer-subscribe__input"
+                        data-placeholder="example@gmail.com"
+                      />
+                      <button
+                        type="submit"
+                        class="footer-subscribe__button _icon-arrow-down"
+                      ></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-footer__bottom">
+            <div class="body-footer__rules">
+              Все материалы, размещенные на сайте, носят справочный характер и
+              не являются публичной офертой, определяемойположениями Статьи 437
+              Гражданского кодекса Российской Федерации. При копировании
+              материалов гиперссылка на www.zlatmax.ru обязательна!
+            </div>
+            <div class="body-footer__copy">
+              Златоустовские ножи <span>www.zlatmax.ru ©</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="dynamic_adapt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
