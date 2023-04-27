@@ -858,8 +858,7 @@ body {
   background: url("../img/header_2/bg.png") center / cover no-repeat;
   padding-top: calc(40px + (40 - 40) * ((100vw - 320px) / (1600 - 320)));
   padding-bottom: calc(40px + (60 - 40) * ((100vw - 320px) / (1600 - 320)));
-  &__container {
-  }
+  overflow: hidden;
   &__body {
     display: grid;
     align-items: start;
@@ -1268,6 +1267,8 @@ body {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .products-slider {
+  overflow: hidden;
+
   &__dotts {
     display: inline-grid;
     grid-auto-flow: column;
